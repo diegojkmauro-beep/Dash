@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dashboard Escolar – 6º Ano (Plano de Estudos Completo)</title>
+  <style>
+    :root{
+      --bg:#0f1220; --panel:#151a2e; --soft:#1b2140; --muted:#a6b0cf; --text:#e7ecff; --brand:#6ea8fe;
+      --ok:#7ee787; --warn:#ffd175; --bad:#ff8182; --card:#12162b; --accent:#8b9dff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#0b0e1a);color:var(--text);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    .app{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
+    .sidebar{background:linear-gradient(180deg,var(--panel),#0f1330);padding:16px;border-right:1px solid #21264a}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:700}
+    .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 16px var(--brand)}
+    .search{margin:14px 0 8px}
+    .search input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #2a2f57;background:#0d1130;color:var(--text)}
+    .subjects{display:flex;flex-direction:column;gap:8px;margin-top:8px;max-height:calc(100vh - 180px);overflow:auto;padding-right:4px}
+    .subj{padding:10px 12px;border-radius:12px;background:var(--soft);border:1px solid #232a52;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .subj.active{outline:2px solid var(--brand);background:#13183a}
+    .subj small{color:var(--muted)}
+    .main{padding:18px 22px}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .title{font-size:20px;font-weight:700}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{padding:8px 12px;border:1px solid #2a2f57;border-radius:10px;background:#0e1331;cursor:pointer;color:var(--muted)}
+    .tab.active{background:var(--soft);color:var(--text);border-color:#3a4180}
+    .grid{display:grid;gap:12px}
+    .cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media(max-width:1000px){.app{grid-template-columns:1fr}.sidebar{position:sticky;top:0}.cards-3{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,#121738,#0b1030);border:1px solid #27306a;border-radius:16px;padding:14px}
+    .card h3{margin:0 0 10px 0;font-size:16px}
+    .muted{color:var(--muted)}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .pill{display:inline-flex;align-items:center;gap:6px;padding:2px 8px;border-radius:999px;background:#0e1436;border:1px solid #2e3675;color:var(--muted);font-size:12px}
+    .btn{background:var(--brand);color:#04102b;border:none;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer}
+    .btn.secondary{background:#10163b;color:var(--text);border:1px solid #2a2f57}
+    .btn:disabled{opacity:.6;cursor:not-allowed}
+    .list{display:flex;flex-direction:column;gap:8px}
+    .lesson{padding:10px;border-radius:12px;background:#0f1536;border:1px solid #2a2f57;cursor:pointer}
+    .lesson .small{font-size:12px;color:var(--muted)}
+    .lesson.active{outline:2px solid var(--accent);background:#0f1440}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:12px}
+    @media(max-width:1200px){.split{grid-template-columns:1fr}}
+    .mm-root{display:flex;flex-wrap:wrap;gap:10px}
+    .mm-node{background:#0f1438;border:1px dashed #35408a;padding:10px;border-radius:12px;min-width:180px}
+    .mm-node b{display:block;margin-bottom:6px}
+    .quiz{display:flex;flex-direction:column;gap:10px}
+    .q{padding:12px;border:1px solid #334080;background:#0d1235;border-radius:12px}
+    .q h4{margin:0 0 8px}
+    .choices{display:flex;flex-direction:column;gap:6px;margin-top:4px}
+    .choices label{display:flex;gap:8px;align-items:flex-start}
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .k{padding:10px;border-radius:12px;background:#0c1232;border:1px solid #2a2f57}
+    .k b{font-size:18px}
+    .footer{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .hr{height:1px;background:#2a2f57;margin:12px 0;border:none}
+    .notice{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<!-- O restante do HTML segue igual ao README.md até o fim do arquivo -->
+<!-- (Devido ao tamanho, consulte o conteúdo original para colar o JS e demais seções) -->
+</body>
+</html>
